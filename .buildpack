@@ -1,2 +1,2 @@
-git@github.com:ddollar/heroku-buildpack-multi.git
-git://github.com/holiture/heroku-buildpack-tex.git
+https://github.com/heroku/heroku-buildpack-nodejs.git
+https://github.com/gulopine/heroku-buildpack-tex.git

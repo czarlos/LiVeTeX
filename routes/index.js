@@ -4,8 +4,8 @@ var qs = require('querystring');
 var fs = require('fs');
 
 /* GET home page. */
-router.get('/', function(req, res) {	
-	res.render('index', {title: 'Express'});	
+router.get('/', function(req, res) {
+	res.render('index', {title: 'LiveTeX'});
 });
 
 router.post('/', function(req, res) {
@@ -24,8 +24,8 @@ router.post('/', function(req, res) {
 		});
 	}
 	else {
-		res.status(400).json({msg: 'you are fool'});	
-	}	
+		res.status(400).json({msg: 'you are fool'});
+	}
 });
 
 module.exports = router;

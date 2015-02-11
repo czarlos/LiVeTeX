@@ -5,7 +5,7 @@ var fs = require('fs');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-	res.render('index', {title: 'LiveTeX'});
+	res.render('index', {title: 'LiVeTeX'});
 });
 
 router.post('/', function(req, res) {

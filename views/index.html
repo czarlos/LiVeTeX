@@ -75,7 +75,37 @@
 	      var codeMirror = CodeMirror(document.getElementById('firepad-container'), { lineWrapping: true });
 	      //// Create Firepad (with rich text toolbar and shortcuts enabled).
 	      var firepad = Firepad.fromCodeMirror(firepadRef, codeMirror,
-	          { richTextToolbar: true, richTextShortcuts: true });
+	      	{ richTextToolbar: true, richTextShortcuts: true, defaultText: 
+	      		'\\documentclass{article}\
+	      		\n\\usepackage{graphicx}\
+	      		\n\n\\begin{document}\
+	      		\n\n\\title{Introduction to \\LaTeX{}}\
+	      		\n\\author{Carlos Reyes}\
+	      		\n\n\\maketitle\
+	      		\n\n\\begin{abstract}\
+	      		\nLiVeTeX provides an online, real-time latex editing environment.\
+	      		\n\\end{abstract}\
+	      		\n\n\\section{Introduction}\
+	      		\nHere are some example equations.\
+	      		\n\n\\begin{equation}\
+	      		\n\\label{simple_equation}\
+	      		\n\\alpha = \\sqrt{ \\beta }\
+	      		\n\\end{equation}\
+	      		\n\n\\begin{equation}\
+	      		\n\\label{simple_equation}\
+	      		\n\\delta = \\alpha\\phi\\lambda\
+	      		\n\n\n\\subsection{Here\'s an example of a subsection}\
+	      		\nWrite your subsection text here.\
+	      		\n\n\\begin{figure}\
+	      		\n\\centering\
+	      		\n\\includegraphics[width=3.0in]{myfigure}\
+	      		\n\\caption{You can put captions in}\
+	      		\n\\label{simulationfigure}\
+	      		\n\\end{figure}\
+	      		\n\n\\section{Conclusion}\
+	      		\nLaTex is pretty cool, LiveTeX makes it quick and easy to write LaTeX.\
+	      		\n\n\\end{document}'
+	      	});
 	      //// Initialize contents.
 
 	      // firepad.on('ready', function() {

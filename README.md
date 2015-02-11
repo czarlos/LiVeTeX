@@ -1,5 +1,8 @@
-#LiVeTex
+#LiVeTeX
 Live, in browser Latex editor.
+
+####To Do
+ - Enable multiple sessions
 
 ####Buildpack Dependencies
 https://github.com/ddollar/heroku-buildpack-multi
